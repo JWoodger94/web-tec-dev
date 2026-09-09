@@ -6,17 +6,18 @@
 <!-- W3Schools (n.d.) CSS Rounded Corners. https://www.w3schools.com/css/css3_borders.asp -->
 
 
-<html>
+<html lang="en">
     <head>
         <title>c5073027 - Josh Woodger</title>
         <style>
             table {
                     border-radius: 15px 50px 30px; /* three values */
                     background: #000000;
-                    width: 100%;
+                    width: 90%;
                     height: 150px;
                     border: 10px solid #000000;
-                    padding: 20px;}
+                    padding: 30px;
+                    margin: 20px auto;}
             
             caption {
                     font-family: Helvetica, sans-serif;
@@ -26,42 +27,82 @@
                     font-weight: bold;
                     margin-left: 30px;
                     padding: 10px;}
+            body {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    background: linear-gradient(0deg, #333333, rgb(4, 4, 4));}
+            h1 {
+                    font-size: 50px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    font-family: Helvetica, sans-serif;
+                    color: #FFFFFF;
+                    text-align: center;}
+            h2 {
+                    font-size: 30px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    font-family: Helvetica, sans-serif;
+                    color: #FFFFFF;
+                    text-align: center;}
+            
+            p {
+                    font-family: Helvetica, sans-serif;
+                    color: #FFFFFF;
+                    text-align: center;
+                    font-size: 20px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;}
+            
+            tr {
+                    border-radius: 15px 50px 30px; /* three values */
+                    background: #000000;
+                    width: 60%;
+                    height: 3%;
+                    border: 10px solid #000000;
+                    padding: 20px;
+                    font-family: Helvetica, sans-serif;
+                    text-align: center;
+                    color: #FFFFFF;
+            }
         </style>
     </head>
 
-    <body style="background: linear-gradient(0deg, #333333, rgb(4, 4, 4));">
-        <h1 style="font-family: Helvetica, sans-serif; text-align: center; color: #FFFFFF;">Hello!</h1>
-        <p style="font-family: Helvetica, sans-serif; text-align: center; color: #FFFFFF;">My name is Josh Woodger, and I'm currently studying my Msc in Computer Science at Sheffield Hallam University.</p>
-        <hr>
-        <h2 style="font-family: Helvetica, sans-serif; text-align: center; color: #FFFFFF;">About Me</h2>
-        <img src="josh.png" alt="Josh Woodger" align="middle" style="display: block; margin: 20px auto; width: 200px; height: auto; border-radius: 50%;">
+    <body>
+        <main>
+            <h1 role="heading">Hello!</h1>
+                <p role="introduction">My name is Josh Woodger, and I'm currently studying my Msc in Computer Science at Sheffield Hallam University.</p>
+                    <hr>
+                        <h2 role="about me heading">About Me</h2>
+                            <img role="img" src="josh.png" alt="Josh Woodger" align="middle" style="display: block; margin: 20px auto; width: 200px; height: auto; border-radius: 50%;">
 
-        <table>
-            <tr>
-                <caption>Sport</caption>
-            </tr>
-            <tr style="font-family: Helvetica, sans-serif; text-align: center; color: #FFFFFF;">
-                <td>I enjoy sports and have done since an early age. I support Rotherham United in football and have held a season ticket for the past five years. I enjoy cricket and try to attend an England test game at least once a year. I’ve boxed since a teenager and am a huge boxing fan; a particular highlight was attending a World Heavyweight Championship unification fight at Wembley last year. In recent times, I’ve also gained an interest in mixed martial arts, having previously practised Karate as a youngster. </td>
-            </tr>
-        </table>
+            <table role="Sporting interests">
+                <tr>
+                    <caption>Sport</caption>
+                </tr>
+                <tr>
+                    <td>I enjoy sports and have done since an early age. I support Rotherham United in football and have held a season ticket for the past five years. I enjoy cricket and try to attend an England test game at least once a year. I’ve boxed since a teenager and am a huge boxing fan; a particular highlight was attending a World Heavyweight Championship unification fight at Wembley last year. In recent times, I’ve also gained an interest in mixed martial arts, having previously practised Karate as a youngster. </td>
+                </tr>
+            </table>
 
-        <table>
+        <table role="Music interests">
             <tr>
                 <caption>Music</caption>
             </tr>
-            <tr style="font-family: Helvetica, sans-serif; text-align: center; color: #FFFFFF;">
+            <tr>
                 <td>I’ve played the guitar for around 22 years, and I performed in various bands when I was a teenager. I have an eclectic taste in music and wouldn’t say I gravitate to any one genre; that being said, I generally enjoy alternative rock, indie, hip-hop and electronic music. I’ve been lucky enough to see a lot of artists over the years, including the Rolling Stones, the Red Hot Chili Peppers, Kings of Leon, and the Arctic Monkeys, and I also attend Tramlines each year (albeit in recent years I’ve tended to pick one day). </td>
             </tr>
         </table>
 
-        <table>
+        <table role="Pets">
             <tr>
                 <caption>Pets</caption>
             </tr>
-            <tr style="font-family: Helvetica, sans-serif; text-align: center; color: #FFFFFF;">
-                <td>I’ve grown up with pets and would consider myself an animal lover. I don’t currently have any pets at home, but I spend a lot of time with my family and with their animals. My parents have a German Shepherd named Rylee (who only ever wants to play ball), my brother and his wife have two Dachshund crossbreeds (Hugo and Vinny) along with five cats! And my grandparents have two Cockapoos (Lolly and Willow). </td>
-            </tr>
-        </table>
-
+                <tr>
+                    <td>I’ve grown up with pets and would consider myself an animal lover. I don’t currently have any pets at home, but I spend a lot of time with my family and with their animals. My parents have a German Shepherd named Rylee (who only ever wants to play ball), my brother and his wife have two Dachshund crossbreeds (Hugo and Vinny) along with five cats! And my grandparents have two Cockapoos (Lolly and Willow). </td>
+                </tr>
+            </table>
+        </main>
     </body>
 </html>
