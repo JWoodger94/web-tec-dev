@@ -1,10 +1,19 @@
 <!-- GeeksforGeeks (2025) How to align Image in HTML?. https://www.geeksforgeeks.org/html/how-to-align-image-in-html/. -->
 <!-- GeeksforGeeks (2025) How to create a table in HTML?. https://www.geeksforgeeks.org/html/how-to-create-a-table-in-html/. -->
-<!-- W3Schools (n.d.) CSS Padding Property. https://www.w3schools.com/cssref/pr_padding.php -->
-<!-- W3Schools (n.d.) CSS Gradients. https://www.w3schools.com/css/css3_gradients.asp -->
-<!-- W3Schools (n.d.) How TO - Rounded Images. https://www.w3schools.com/howto/howto_css_rounded_images.asp -->
-<!-- W3Schools (n.d.) CSS Rounded Corners. https://www.w3schools.com/css/css3_borders.asp -->
-
+<!--GeeksforGeeks(2025) HTML Clearing the input field. https://www.geeksforgeeks.org/html-clear-input-field/-->
+<!--GeeksforGeeks(2026) HTML Forms. https://www.geeksforgeeks.org/html-forms/-->
+<!--Mozilla(n.d.) required HTML attribute. https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/required-->
+<!--Mozilla(n.d.) Sending form data. https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Sending_and_retrieving_form_data-->
+<!--TutorialPedia(2025) Mastering Form Borders in HTML and CSS. https://www.tutorialpedia.org/blog/form-border-html-css/-->
+<!--W3Schools(n.d.) CSS Form Inputs. https://www.w3schools.com/css/css_form_inputs.asp-->
+<!--W3Schools (n.d.) CSS Gradients. https://www.w3schools.com/css/css3_gradients.asp -->
+<!--W3Schools(n.d.) CSS Margin Property. https://www.w3schools.com/cssref/pr_margin.php-->
+<!--W3Schools (n.d.) CSS Padding Property. https://www.w3schools.com/cssref/pr_padding.php -->
+<!--W3Schools (n.d.) CSS Rounded Corners. https://www.w3schools.com/css/css3_borders.asp -->
+<!--W3Schools(n.d.) CSS Styling Buttons. https://www.w3schools.com/csS/css3_buttons.asp-->
+<!--W3Schools(n.d.) HTML Forms. https://www.w3schools.com/html/html_forms.asp-->
+<!--W3Schools(n.d.) HTML <input> required Attribute. https://www.w3schools.com/tags/att_input_required.asp-->
+<!--W3Schools (n.d.) How TO - Rounded Images. https://www.w3schools.com/howto/howto_css_rounded_images.asp -->
 
 <html lang="en">
     <head>
@@ -67,7 +76,89 @@
                     text-align: center;
                     color: #FFFFFF;
             }
+
+            legend {
+                    font-family: Helvetica, sans-serif;
+                    color:#FFFFFF;
+                    font-optical-sizing: auto;
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin: 10px;    
+            }
+
+            form {
+                    margin: 20px;
+            }
+
+            fieldset {
+                    border-width: 2px;
+                    border-style: solid;
+                    border-color: #FFFFFF;
+                    padding: 20px;
+            }
+
+            label {
+                    font-family: Helvetica, sans-serif;
+                    color: #FFFFFF;
+                    font-optical-sizing: auto;
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin: 10px;
+            }
+
+            input[type="submit"] {
+                    font-family: Helvetica, sans-serif;
+                    background-color: #E35205;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 10px;
+                    cursor: pointer;
+            }
+
+            input[type="date"] {
+                    font-family: Helvetica, sans-serif;
+                    font-optical-sizing: auto;
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin: 10px;
+            }
+
+            select {
+                    font-family: Helvetica, sans-serif;
+                    font-optical-sizing: auto;
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin: 10px;
+            }
+
+            .textbox {
+                    width: 100%;
+                    max-width: 700px;
+                    height: 100px;
+                    font-family: Helvetica, sans-serif;
+                    font-optical-sizing: auto;
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin: 10px;
+            }
+
+            input[type="checkbox"] {
+                    margin: 10px;
+                    font-family: Helvetica, sans-serif;
+                    color: #FFFFFF;
+            }
         </style>
+
+    <script>
+    function clearForm() {
+    document.getElementById("Your interests").reset();
+}
+</script>
     </head>
 
     <body>
@@ -104,6 +195,58 @@
                     <td>I’ve grown up with pets and would consider myself an animal lover. I don’t currently have any pets at home, but I spend a lot of time with my family and with their animals. My parents have a German Shepherd named Rylee (who only ever wants to play ball), my brother and his wife have two Dachshund crossbreeds (Hugo and Vinny) along with five cats! And my grandparents have two Cockapoos (Lolly and Willow). </td>
                 </tr>
             </table>
-        </main>
+        <p>It would be great to hear about some of your interests too! If you'd like to share, please use the form below:</p>
+        <form id="Your interests">
+        <fieldset>
+            <legend>Your Interests</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="Name" name="Name" required><br><br>
+            <label for="Submission Date">Submission Date:</label>
+            <input type="date" id="Submission Date" name="Submission Date" required><br><br>
+            <label for="What are your interests?">What are your interests?</label><br><br>
+                
+                <input type="checkbox" id="Interest" name="Interest" value="Animals">
+                <label for="Animals">Animals</label><br>
+                
+                <input type="checkbox" id="Interest" name="Interest" value="Art">
+                <label for="Art">Art</label><br>
+                
+                <input type="checkbox" id="Interest" name="Interest" value="Dancing">
+                <label for="Dancing">Dancing</label><br>
+
+                
+                <input type="checkbox" id="Interest" name="Interest" value="Films">
+                <label for="Films">Films</label><br>
+
+                
+                <input type="checkbox" id="Interest" name="Interest" value="Gaming">
+                <label for="Gaming">Gaming</label><br>
+
+                
+                <input type="checkbox" id="Interest" name="Interest" value="Horticulture">
+                <label for="Horticulture">Horticulture</label><br>
+                
+                <input type="checkbox" id="Interest" name="Interest" value="Other">
+                <label for="Other">Other</label><br>
+
+                <label for="Other">If other, please specify:</label>
+                <input type="text" id="Other" name="Other"><br>
+                
+                <input type="checkbox" id="Interest" name="Interest" value="Reading">
+                <label for="Reading">Reading</label><br>
+                
+                <input type="checkbox" id="Interest" name="Interest" value="Sports">
+                <label for="Sports">Sports</label><br>
+                
+                <input type="checkbox" id="Interest" name="Interest" value="Studying">
+                <label for="Studying">Studying</label><br><br>
+
+                <label for="Tell me more about your interests">Tell me more about your interests:</label><br><br>
+                <textarea id="Comment" name="Comment" rows="10" class="textbox"></textarea ><br><br>
+                <input type="submit" value="Submit" onclick="clearForm()">
+        </fieldset>
+    </form>
+    </main>
     </body>
 </html>
